@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ODSG</title>
+<link rel="icon" href="https://owniedesigns.b-cdn.net/ODSG.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,17 +14,28 @@
     <a href="index.html">OWNIEDESIGN©</a>
   </div>
 
-  <div class="right">
-    <div class="MENU">
-      <a href="news_en.html">NEWS</a>
-      <a href="gallary_kr.html">GALLARY</a>
-      <a href="contact_en.html">CONTACT</a>
-    </div>
+  <!-- ฝั่งขวามือ: รวมปุ่ม Hamburger + ปุ่มเปลี่ยนภาษา + เมนูที่จะซ่อน -->
+  <div class="nav-right-wrapper">
+    <!-- ปุ่ม Hamburger (เบอร์เกอร์ซ้าย) -->
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
 
+    <!-- ภาษา EN / KR (อยู่ขวา) -->
+    
+
+    <!-- เมนูที่จะโดนซ่อนแล้วสไลด์ออกมาเมื่อกด Hamburger -->
+    <div class="right">
+      <div class="MENU">
+        <a href="news_en.html">NEWS</a>
+        <a href="gallary_kr.html">GALLARY</a>
+        <a href="contact_en.html">CONTACT</a>
+      </div>
+    </div>
     <div class="lang">
       <a href="gallary_en.html">EN</a>
       <span>/</span>
-      <a href="gallary_kr.html"class="lang-kr">KR</a>
+      <a href="gallary_kr.html" class="lang-kr">KR</a>
     </div>
   </div>
 </div>

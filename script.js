@@ -453,3 +453,23 @@
 
 
 })();
+
+// Mobile nav show/hide
+const navToggle = document.querySelector('.nav-toggle');
+const navRight = document.querySelector('.right');
+
+if (navToggle && navRight) {
+  navToggle.addEventListener('click', () => {
+    const isActive = navToggle.classList.toggle('active');
+    navRight.classList.toggle('active');
+    navToggle.setAttribute('aria-expanded', isActive);
+  });
+
+  navRight.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navToggle.classList.remove('active');
+      navRight.classList.remove('active');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
